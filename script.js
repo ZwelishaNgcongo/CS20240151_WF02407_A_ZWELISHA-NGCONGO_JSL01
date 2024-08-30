@@ -2,11 +2,11 @@ function validateSyntax() {
     let input = document.getElementById('petInput').value;
     
     /* testing the format input */
-    let format = /^pet_\d{4}[a-zA-Z]+$/;
+    let formatInput = /^pet_\d{4}[a-zA-Z]+$/;
 
      /* Testing the input string against the format input required */
-    let result;
-    if (format.test(input)) {
+    
+    if (formatInput.test(input)) {
         result = "Valid Syntax";
     } else {
         result = "Invalid Syntax";
@@ -16,3 +16,13 @@ function validateSyntax() {
     document.getElementById('result').innerText = result;
 }
 
+/* application of tenanory operator */
+
+/* function validateSyntax(){
+    let input = document.getElementById("petInput").value;
+    let formatInput = /^pet_\d{4}[a-zA-Z]+$/; 
+    let results= format.test(input) ? "valid sytntax" : "invalid syntax";
+
+    results=document.getElementById("result").innerText;
+
+} */
